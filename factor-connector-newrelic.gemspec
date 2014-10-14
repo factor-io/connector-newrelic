@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   
   s.require_paths = ['lib']
 
-  s.add_runtime_dependency 'factor-connector-api', '~> 0.0.10'
+  s.add_runtime_dependency 'factor-connector-api', '~> 0.0.12'
   s.add_runtime_dependency 'newrelic-metrics', '~> 0.0.4'
   s.add_runtime_dependency 'chronic', '~> 0.10.2'
 
