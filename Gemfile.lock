@@ -3,8 +3,8 @@ PATH
   specs:
     factor-connector-newrelic (0.0.3)
       chronic (~> 0.10.2)
-      factor-connector-api (~> 0.0.13)
-      newrelic-metrics (~> 0.0.4)
+      factor-connector-api (~> 0.0.14)
+      newrelic-metrics (~> 0.1.02)
 
 GEM
   remote: https://rubygems.org/
@@ -12,22 +12,22 @@ GEM
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chronic (0.10.2)
-    codeclimate-test-reporter (0.4.1)
+    codeclimate-test-reporter (0.4.5)
       simplecov (>= 0.7.1, < 1.0.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    factor-connector-api (0.0.13)
+    factor-connector-api (0.0.14)
       celluloid (~> 0.16.0)
     hitimes (1.2.2)
-    json (1.8.1)
-    mime-types (2.4.1)
+    json (1.8.2)
+    mime-types (2.4.3)
     multi_json (1.10.1)
-    netrc (0.7.7)
-    newrelic-metrics (0.0.4)
+    netrc (0.10.2)
+    newrelic-metrics (0.1.02)
       chronic (~> 0.10.2)
       json (~> 1.8.1)
       rest-client (~> 1.7.2)
-    rake (10.3.2)
+    rake (10.4.2)
     rest-client (1.7.2)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
@@ -55,7 +55,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  codeclimate-test-reporter (~> 0.4.1)
+  codeclimate-test-reporter (~> 0.4.5)
   factor-connector-newrelic!
-  rake (~> 10.3.2)
+  rake (~> 10.4.2)
   rspec (~> 3.1.0)
