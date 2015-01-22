@@ -6,3 +6,10 @@ env:
   - secure: ii9nhNojy3uWv9V5AwzL4XnuSOfcZozeB94TxfaKEHsikd//nRnTbgL9j5xXxN/1GZvn/2Uyc9VOTvQoKCVsqjO4p0Rsg+AabrF1Q3O6nQlz30Kg8qFtYTxYffmQTNTB1UxDtkSlrRqb3dv0h3WH31Cwox1y9c6020W1nxxMKWg=
   - secure: XFSob0TrqVQye9kuxJ5y+puh9KyipD05ttPak4sII3MWtYzezxqr7oJHFcF2i4l4CCoNqGZxavHExoTlwFCsboXYakm0Eb6XT6PrSOJfQwZj3ocg8LR9n7aF+yLssglMAgnEbYUh+kureC43/Oca7PUCAW2aITKpjybi7FUXcjk=
   - secure: Fme0/EUBpUkDvn/zVusPmbCPDXpPNrICRkxz558vR703+E6RRIgZ2/s/+xOEFOx/NgAqOy7so9XLno8DHSNgZ7pz1pe+lVKJ2yk4eWhcVjguozA6zoqEP3XMa4dsJZICUljUooI9yeSpTkD16a8CslAMeqxWV8RTtGCRJMLaO3U=
+deploy:
+  provider: rubygems
+  gem: factor-connector-newrelic
+  api_key:
+    secure: T24epDVon+Cx5yVd02i1ToHjr5pWnMjTCyudzlAXLBF9Rtsta6N6O41RNuHk94KXzoyfS4r8snblzENqR4OFYGE7VkDR1S14nE1rJWM7O9H3ExJh+mPrGtZNQ2Iaxl/a6wGNUb8TQYQEV8v+Qdt7FyFvtESZxHbSClJ7ChOZ1v0=
+  on:
+    tags: true
