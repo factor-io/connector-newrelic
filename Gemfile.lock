@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    factor-connector-newrelic (0.0.4)
+    factor-connector-newrelic (0.0.5)
       chronic (~> 0.10.2)
       factor-connector-api (~> 0.0.14)
       newrelic-metrics (~> 0.1.02)
