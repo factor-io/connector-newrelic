@@ -10,7 +10,7 @@ deploy:
   provider: rubygems
   gem: factor-connector-newrelic
   api_key:
-    secure: mMY5ZBtkbojnbXBLCnMpvdokLoJU+RbeafrQ3CZpOGXK4+mg8hoY79kdNIYNImF4bhOh3G0Ol0ByCsBGcciX1hknWLyrv8ZNNxlhoDLgTozcTIi8Zyd1SkRD360LUxGn5cDOgX+7o226zh6p2B742dVcgIf8Y469cGxT855DpBg=
+    secure: Ku9G4ArcMhgVr/Vr8L+K9TQaKM0x69FZsIzq3S3i/kJqUMmnqQlZqo/V6EKbe8uqt3hKCwR/jTyv76PFw166VMTIE7ZwZjuM6M8tbrRIdtSBzY6Aonydc9vZbAEWZPtU+SDG3UmbT0yx+eF4qdfBH/M+sDDYchUwToo8ctW65oE=
   on:
     tags: true
     all_branches: true
