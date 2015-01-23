@@ -9,6 +9,7 @@ Factor::Connector.service 'newrelic_metrics' do
     app_id    = params['application']
     metrics   = params['metrics']
     range     = params['range']
+    summarize = params['summarize'] || false
 
     fail "API Key (api_key) is required" unless api_key
     fail "Server ID (server) or Application ID (application) is required" unless server_id || app_id
@@ -27,6 +28,8 @@ Factor::Connector.service 'newrelic_metrics' do
         fail "Range (range) 'to' time must be a String" unless range['to'].is_a?(String)
         fail "Range (range) 'to' time is invalid" unless Chronic.parse(range['to'], context: :past)
       end
+      range[:to] = range.delete('to')
+      range[:from] = range.delete('from')
     end
 
     option = {}
@@ -35,10 +38,13 @@ Factor::Connector.service 'newrelic_metrics' do
 
     info "Pulling data from New Relic"
     begin
-      api = NewRelicMetrics.new(api_key,option)
-      data = api.summarize(metrics, range)
-    rescue
-      fail "Failed to collect data from New Relic"
+      config = NewRelicMetrics::Configuration.new
+      config.api_key = api_key
+      api = NewRelicMetrics::Client.new(config)
+      query = option.merge(metrics:metrics, range:range, summarize: summarize)
+      data = api.metrics(query)
+    rescue => ex
+      fail "Failed to collect data from New Relic", exception: ex
     end
 
     action_callback data
