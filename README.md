@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/factor-io/connector-newrelic/badges/gpa.svg)](https://codeclimate.com/github/factor-io/connector-newrelic)
 [![Test Coverage](https://codeclimate.com/github/factor-io/connector-newrelic/badges/coverage.svg)](https://codeclimate.com/github/factor-io/connector-newrelic)
 [![Build Status](https://travis-ci.org/factor-io/connector-newrelic.svg?branch=master)](https://travis-ci.org/factor-io/connector-newrelic)
 [![Dependency Status](https://gemnasium.com/factor-io/connector-newrelic.svg)](https://gemnasium.com/factor-io/connector-newrelic)
